@@ -21,7 +21,7 @@ require 'bio/compat/features'
 require 'bio/compat/references'
 require 'bio/db/genbank/genbank'
 require 'bio/db/genbank/genbank_to_biosequence'
-require 'bio/db/rdf/format_rdf'
+require 'bio/db/rdf/biosequence_format_rdf'
 
 module Bio
   class TestBioRdf < Test::Unit::TestCase

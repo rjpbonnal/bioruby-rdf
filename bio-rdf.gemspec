@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    ".DS_Store",
     ".document",
     "Gemfile",
     "Gemfile.lock",
@@ -27,10 +26,8 @@ Gem::Specification.new do |s|
     "VERSION",
     "bio-rdf.gemspec",
     "lib/bio-rdf.rb",
-    "lib/bio/db/rdf/format_rdf.rb",
-    "test/.DS_Store",
+    "lib/bio/db/rdf/biosequence_format_rdf.rb",
     "test/bio/db/test_rdf.rb",
-    "test/data/.DS_Store",
     "test/data/genbank/AB000100.gb",
     "test/data/n3/AB000100.n3",
     "test/data/ntriples/AB000100.ntriples",
@@ -52,16 +49,30 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<bio>, [">= 1.4.1"])
+      s.add_development_dependency(%q<rdf>, [">= 0"])
+      s.add_development_dependency(%q<rdf-rdfxml>, [">= 0"])
+      s.add_development_dependency(%q<rdf-n3>, [">= 0"])
+      s.add_development_dependency(%q<rdf-json>, [">= 0"])
       s.add_runtime_dependency(%q<bio>, [">= 0"])
       s.add_runtime_dependency(%q<rdf>, [">= 0"])
+      s.add_runtime_dependency(%q<rdf-rdfxml>, [">= 0"])
+      s.add_runtime_dependency(%q<rdf-n3>, [">= 0"])
+      s.add_runtime_dependency(%q<rdf-json>, [">= 0"])
     else
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<rcov>, [">= 0"])
       s.add_dependency(%q<bio>, [">= 1.4.1"])
+      s.add_dependency(%q<rdf>, [">= 0"])
+      s.add_dependency(%q<rdf-rdfxml>, [">= 0"])
+      s.add_dependency(%q<rdf-n3>, [">= 0"])
+      s.add_dependency(%q<rdf-json>, [">= 0"])
       s.add_dependency(%q<bio>, [">= 0"])
       s.add_dependency(%q<rdf>, [">= 0"])
+      s.add_dependency(%q<rdf-rdfxml>, [">= 0"])
+      s.add_dependency(%q<rdf-n3>, [">= 0"])
+      s.add_dependency(%q<rdf-json>, [">= 0"])
     end
   else
     s.add_dependency(%q<shoulda>, [">= 0"])
@@ -69,8 +80,15 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<rcov>, [">= 0"])
     s.add_dependency(%q<bio>, [">= 1.4.1"])
+    s.add_dependency(%q<rdf>, [">= 0"])
+    s.add_dependency(%q<rdf-rdfxml>, [">= 0"])
+    s.add_dependency(%q<rdf-n3>, [">= 0"])
+    s.add_dependency(%q<rdf-json>, [">= 0"])
     s.add_dependency(%q<bio>, [">= 0"])
     s.add_dependency(%q<rdf>, [">= 0"])
+    s.add_dependency(%q<rdf-rdfxml>, [">= 0"])
+    s.add_dependency(%q<rdf-n3>, [">= 0"])
+    s.add_dependency(%q<rdf-json>, [">= 0"])
   end
 end
 
