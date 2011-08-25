@@ -12,8 +12,10 @@ require 'bio/sequence/format'
 require 'bio/sequence/format'
 require 'cgi'
 require 'rdf'
-require 'rdf/ntriples'
 #require 'uuid'
+
+#Supported output format are NTriples, RDFXML, N3
+#These libraries must be installed to be used and are automatically required by this gem
 
 module Bio
   class Reference
@@ -28,6 +30,7 @@ module Bio::Sequence::Format::Formatter
   # Raw sequence output formatter class
   class Rdf < Bio::Sequence::Format::FormatterBase
 
+    FORMATS ={:XML=>"RDFXML", :NTRIPLES=>"NTriples", :N3=>"N3", :JSON=>"JSON"}
     # helper methods
     include Bio::Sequence::Format::INSDFeatureHelper
 
@@ -105,9 +108,9 @@ __RDF_TAIL__
     end
 
 
-    def rdf_statement(subject, vocabulary, type, field=type)
-      RDF::Statement.new(subject, )
-    end
+    # def rdf_statement(subject, vocabulary, type, field=type)
+    #   RDF::Statement.new(subject, )
+    # end
 
     #In the near futur it will return a graph, in the mean while it returns an array of statements
     def build_graph
@@ -179,10 +182,26 @@ __RDF_TAIL__
       graph
     end #build
 
+    def rdf_output_type
+      (@options[:type] && FORMATS[@options[:type].upcase.intern]) || "NTriples"
+    end
+    
+    def require_rdf_type
+      require "rdf/#{rdf_output_type.downcase}"
+    end
+    
+    def get_rdf_writer
+      eval("RDF::#{rdf_output_type}::Writer")
+    end
+    
+    #Options :type=>[:ntriples,:xml]
+    #default is :ntriples
     def output
       #TODO ugly rewrite
-      RDF::NTriples::Writer.buffer do |writer|
-        build.each_statement do |statement|
+      require_rdf_type
+      writer_class = get_rdf_writer
+      writer_class.buffer do |writer|
+        build_graph.each_statement do |statement|
           writer << statement
         end
       end

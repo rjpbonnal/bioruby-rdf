@@ -70,17 +70,47 @@ module Bio
 #       assert_equal("<obf_item:length>2992</obf_item:length>", @formatter.rdf_item("obf_item","length"))
 #     end
 
+    # 
+    # def notest_to_rdf_direct_xml
+    #   rdf_xml = @seq.output(:rdf)
+    #   assert_equal( "", rdf_xml)
+    # end
 
-    def notest_to_rdf_direct_xml
-      rdf_xml = @seq.output(:rdf)
-      assert_equal( "", rdf_xml)
-    end
-
-    def test_to_rdf_ntriples
-      puts @formatter.rdf_ntriples
-      assert_equal("", @formatter.rdf_ntriples)
+    def test_rdf_default
+      wf=File.open("test/data/results/test_default.txt",'w')
+      wf.puts out = @seq.output(:rdf)
+      wf.close
+      assert_equal("", out)
     end
     
+    def test_rdf_ntriples
+      wf=File.open("test/data/results/test_ntriples.txt",'w')
+      wf.puts out = @seq.output(:rdf, :type=>"ntriples")
+      wf.close
+      assert_equal("", out)
+    end
+
+    def test_rdf_xml
+      wf=File.open("test/data/results/test_xml.txt",'w')
+      wf.puts out = @seq.output(:rdf, :type=>"xml")
+      wf.close
+      assert_equal("", out)
+    end
+    
+    def test_rdf_n3
+      wf=File.open("test/data/results/test_n3.txt",'w')
+      wf.puts out = @seq.output(:rdf, :type=>"n3")
+      wf.close
+      assert_equal("", out)
+    end
+    
+    def test_rdf_json
+      wf=File.open("test/data/results/test_json.txt",'w')
+      wf.puts out = @seq.output(:rdf, :type=>"json")
+      wf.close
+      assert_equal("", out)
+    end
+
 
 
  #    #test for bio_to_sequence

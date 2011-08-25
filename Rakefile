@@ -24,6 +24,9 @@ Jeweler::Tasks.new do |gem|
   # dependencies defined in Gemfile
   gem.add_runtime_dependency 'bio'
   gem.add_runtime_dependency 'rdf'
+  gem.add_runtime_dependency 'rdf-rdfxml'
+  gem.add_runtime_dependency 'rdf-n3'
+  gem.add_runtime_dependency 'rdf-json'
 #  gem.add_runtime_dependency 'uuid'
 end
 Jeweler::RubygemsDotOrgTasks.new

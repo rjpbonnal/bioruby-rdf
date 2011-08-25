@@ -12,4 +12,7 @@ group :development do
   gem "rcov", ">= 0"
   gem "bio", ">= 1.4.1"
   gem "rdf"
+  gem "rdf-rdfxml"
+  gem "rdf-n3"
+  gem "rdf-json"
 end
