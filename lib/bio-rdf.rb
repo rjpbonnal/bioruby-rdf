@@ -9,3 +9,11 @@
 # directly into this file, because doing so causes confusion if this biogem 
 # was ever to get merged into the main bioruby tree.
 require 'bio'
+require 'bio/sequence'
+require 'bio/reference'
+require 'bio/feature'
+require 'bio/compat/features'
+require 'bio/compat/references'
+require 'bio/db/genbank/genbank'
+require 'bio/db/genbank/genbank_to_biosequence'
+require 'bio/db/rdf/biosequence_format_rdf'

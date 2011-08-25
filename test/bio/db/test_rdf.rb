@@ -33,49 +33,6 @@ module Bio
       @formatter = Bio::Sequence::Format::Formatter::Rdf.new(@seq)
     end
 
-#     def test_rdf_header
-#       
-#       expected_header = <<'__RDF_HEADER__'
-#       <rdf:RDF
-#        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-#        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-#        xmlns:dc="http://purl.org/dc/elements/1.1/"
-#        xmlns:ddbj="http://sabi.ddbj.nig.ac.jp/"
-#        xmlns:ddbj_item="http://sabi.ddbj.nig.ac.jp/core/item/"
-#        xmlns:ddbj_qualifier="http://sabi.ddbj.nig.ac.jp/core/qualifier/"
-#        xmlns:dad="http://sabi.ddbj.nig.ac.jp/dad/"
-#        xmlns:ncbi="http://www.ncbi.nih.gov/"
-#       >
-# __RDF_HEADER__
-#       assert_equal(expected_header, @formatter.rdf_header)
-#     end
-    
-    # def test_rdf_body
-    #   expected_body = "<rdf:Description rdf:about=\"http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100\">\n</rdf:Description>"
-    #   assert_equal(expected_body, @formatter.rdf_body)
-    # end
-#     
-#     def test_rdf_tail
-#       expected_tail = <<'__RDF_TAIL__'
-#       </rdf:RDF>
-# __RDF_TAIL__
-#       assert_equal( expected_tail, @formatter.rdf_tail)
-#     end            
-# 
-#     def test_rdf_item
-#       assert_equal("<obf_item:locus>AB000100</obf_item:locus>", @formatter.rdf_item("obf_item","locus","entry_id"))
-#     end
-# 
-#     def test_rdf_item_implicit
-#       assert_equal("<obf_item:length>2992</obf_item:length>", @formatter.rdf_item("obf_item","length"))
-#     end
-
-    # 
-    # def notest_to_rdf_direct_xml
-    #   rdf_xml = @seq.output(:rdf)
-    #   assert_equal( "", rdf_xml)
-    # end
-
     def test_rdf_default
       wf=File.open("test/data/results/test_default.txt",'w')
       wf.puts out = @seq.output(:rdf)
