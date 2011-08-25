@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Raoul J.P. Bonnal"]
-  s.date = %q{2011-08-24}
+  s.date = %q{2011-08-25}
   s.description = %q{TODO: longer description of your gem}
   s.email = %q{ilpuccio.febo@gmail.com}
   s.extra_rdoc_files = [
@@ -17,13 +17,23 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
+    ".DS_Store",
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bio-rdf.gemspec",
     "lib/bio-rdf.rb",
+    "lib/bio/db/rdf/format_rdf.rb",
+    "test/.DS_Store",
+    "test/bio/db/test_rdf.rb",
+    "test/data/.DS_Store",
+    "test/data/genbank/AB000100.gb",
+    "test/data/n3/AB000100.n3",
+    "test/data/ntriples/AB000100.ntriples",
     "test/helper.rb",
     "test/test_bio-rdf.rb"
   ]
@@ -42,12 +52,16 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<bio>, [">= 1.4.1"])
+      s.add_runtime_dependency(%q<bio>, [">= 0"])
+      s.add_runtime_dependency(%q<rdf>, [">= 0"])
     else
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<rcov>, [">= 0"])
       s.add_dependency(%q<bio>, [">= 1.4.1"])
+      s.add_dependency(%q<bio>, [">= 0"])
+      s.add_dependency(%q<rdf>, [">= 0"])
     end
   else
     s.add_dependency(%q<shoulda>, [">= 0"])
@@ -55,6 +69,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<rcov>, [">= 0"])
     s.add_dependency(%q<bio>, [">= 1.4.1"])
+    s.add_dependency(%q<bio>, [">= 0"])
+    s.add_dependency(%q<rdf>, [">= 0"])
   end
 end
 

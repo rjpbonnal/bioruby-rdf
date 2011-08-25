@@ -1,0 +1,74 @@
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/locus> "AB000100" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/length> "2992" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/moltype> "DNA" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/topology> "linear" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/division> "BCT" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/lastdate> "15-MAY-2009" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/definition> "Synechococcus elongatus PCC 7942 genes for intrinsic membrane protein, malK-like protein, cyanase, complete cds." .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/primary_accession> "AB000100" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/version> "AB000100.1" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/keywords> "." .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/source> "Synechococcus elongatus PCC 7942" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/organism> "Synechococcus elongatus PCC 7942" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/lineage> "Bacteria; Cyanobacteria; Chroococcales; Synechococcus." .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabi.ddbj.nig.ac.jp/core/reference> .
+_:genid1 <http://sabi.ddbj.nig.ac.jp/core/item/bases> "1 to 2992" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1> "Omata,T." .
+_:genid1 <http://sabi.ddbj.nig.ac.jp/core/item/author> _:genid2 .
+_:genid1 <http://sabi.ddbj.nig.ac.jp/core/item/title> "Direct Submission" .
+_:genid1 <http://sabi.ddbj.nig.ac.jp/core/item/journal> "Submitted (26-DEC-1996) to the DDBJ/EMBL/GenBank databases. Contact:Tatsuo Omata School of Agricultural Sciences, Nagoya University, Department of Applied Biological Sciences; Chikusa, Nagoya, Aichi 464-01, Japan" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/reference> _:genid1 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabi.ddbj.nig.ac.jp/core/reference> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1> "Harano,Y" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#_2> "Suzuki,I" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#_3> "Maeda,S" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#_4> "Kaneko,T" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#_5> "Tabata,S." .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#_6> "Omata,T." .
+_:genid3 <http://sabi.ddbj.nig.ac.jp/core/item/author> _:genid4 .
+_:genid3 <http://sabi.ddbj.nig.ac.jp/core/item/title> "Identification and nitrogen regulation of the cyanase gene from the cyanobacteria Synechocystis sp. strain PPC 6803 and Synechococcus sp. strain PPC 7942" .
+_:genid3 <http://sabi.ddbj.nig.ac.jp/core/item/journal> "J. Bacteriol. 179, 5744-5750 (1997)" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/reference> _:genid3 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabi.ddbj.nig.ac.jp/core/feature/source> .
+_:genid5 <http://sabi.ddbj.nig.ac.jp/core/qualifier/location> "1..2992" .
+_:genid5 <http://sabi.ddbj.nig.ac.jp/core/qualifier/clone_lib> "constructed in pBluescript II KS-" .
+_:genid5 <http://sabi.ddbj.nig.ac.jp/core/qualifier/db_xref_taxon> <http://www.ncbi.nlm.nih.gov/taxonomy/1140> .
+_:genid5 <http://sabi.ddbj.nig.ac.jp/core/qualifier/mol_type> "genomic DNA" .
+_:genid5 <http://sabi.ddbj.nig.ac.jp/core/qualifier/organism> "Synechococcus elongatus PCC 7942" .
+_:genid5 <http://sabi.ddbj.nig.ac.jp/core/qualifier/strain> "PCC 7942" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/feature> _:genid5 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabi.ddbj.nig.ac.jp/core/feature/CDS> .
+_:genid6 <http://sabi.ddbj.nig.ac.jp/core/qualifier/location> "121..912" .
+_:genid6 <http://sabi.ddbj.nig.ac.jp/core/qualifier/codon_start> "1" .
+_:genid6 <http://sabi.ddbj.nig.ac.jp/core/qualifier/gene> "cynB" .
+_:genid6 <http://sabi.ddbj.nig.ac.jp/core/qualifier/product> "intrinsic membrane protein" .
+_:genid6 <http://sabi.ddbj.nig.ac.jp/core/qualifier/protein_id> "BAA21794.1" .
+_:genid6 <http://sabi.ddbj.nig.ac.jp/core/qualifier/transl_table> "11" .
+_:genid6 <http://sabi.ddbj.nig.ac.jp/core/qualifier/translation> "MVRTPVPLYLRWAVSILSVLAFLAIWQIAAASGFLGKTFPGSLRTLQDLFGWLSDPFFDNGPNDLGIGWNLLISLRRVAIGYLLATVVAIPLGIAIGMSALASSIFSPFVQLLKPVSPLAWLPIGLFLFRDSELTGVFVILISSLWPTLINTAFGVANVNPDFLKVSQSLGASRWRTILKVILPAALPSIIAGMRISMGIAWLVIVAAEMLLGTGIGYFIWNEWNNLSLPNIFSAIIIIGIVGILLDQGFRFLENQFSYAGNR" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/feature> _:genid6 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabi.ddbj.nig.ac.jp/core/feature/CDS> .
+_:genid7 <http://sabi.ddbj.nig.ac.jp/core/qualifier/location> "916..1785" .
+_:genid7 <http://sabi.ddbj.nig.ac.jp/core/qualifier/codon_start> "1" .
+_:genid7 <http://sabi.ddbj.nig.ac.jp/core/qualifier/gene> "cynD" .
+_:genid7 <http://sabi.ddbj.nig.ac.jp/core/qualifier/product> "malK-like protein" .
+_:genid7 <http://sabi.ddbj.nig.ac.jp/core/qualifier/protein_id> "BAA21795.1" .
+_:genid7 <http://sabi.ddbj.nig.ac.jp/core/qualifier/transl_table> "11" .
+_:genid7 <http://sabi.ddbj.nig.ac.jp/core/qualifier/translation> "MISEAVPAKEETGQAQLLIEQVGKVFTVNSPSLLDRLRQRSPKRYVALEDVNLTIASNTFVSIIGPSGCGKSTLLNLIAGLDLPTSGQILLDGQRIRSPGPDRGIVFQNYALMPWMTALENVIFAVETARPNLSKSQAREVAREHLELVGLTKAADRYPGQISGGMKQRVAIARALSIRPKLLLMDEPFGALDALTRGYLQEEVLRIWEANKLSVVLITHSIDEALLLSDRIVVMSRGPRATIREVIDLPAVRPRQRSVIEEDERFVKIKLRLEEHLFNETRAVEEASV" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/feature> _:genid7 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sabi.ddbj.nig.ac.jp/core/feature/CDS> .
+_:genid8 <http://sabi.ddbj.nig.ac.jp/core/qualifier/location> "1796..2236" .
+_:genid8 <http://sabi.ddbj.nig.ac.jp/core/qualifier/codon_start> "1" .
+_:genid8 <http://sabi.ddbj.nig.ac.jp/core/qualifier/ec_number> "4.2.1.104" .
+_:genid8 <http://sabi.ddbj.nig.ac.jp/core/qualifier/gene> "cynS" .
+_:genid8 <http://sabi.ddbj.nig.ac.jp/core/qualifier/product> "cyanase" .
+_:genid8 <http://sabi.ddbj.nig.ac.jp/core/qualifier/protein_id> "BAA19515.1" .
+_:genid8 <http://sabi.ddbj.nig.ac.jp/core/qualifier/transl_table> "11" .
+_:genid8 <http://sabi.ddbj.nig.ac.jp/core/qualifier/translation> "MTSAITEQLLKAKKAKGITFTELEQLLGRDEVWIASVFYRQSTASPEEAEKLLTALGLDLALADELTTPPVKGCLEPVIPTDPLIYRFYEIMQVYGLPLKDVIQEKFGDGIMSAIDFTLDVDKVEDPKGDRVKVTMCGKFLAYKKW" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/feature> _:genid8 .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/base_count_a> "654" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/base_count_c> "759" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/base_count_g> "785" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/base_count_t> "794" .
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100> <http://sabi.ddbj.nig.ac.jp/core/item/origin> "ctgcagccgccgactgaaatctatcgggaagaaaagctcgcttacgacacctttaacccgcaggatccagtcgcttacctcgcatctcaaaagcagaaatacgggagataaacacaacttatggtgagaactcctgtaccgctttacctacgttgggcggtctccatcctcagcgtgcttgcgttcctagccatttggcaaattgcggcagcttcaggatttttaggcaaaacttttcctggctccctgcgcactttgcaggatttgtttggatggctttcagatcccttctttgataacggccccaatgacttagggattggctggaacttactgattagtttgcgtcgcgttgcgatcggctacctgctggcaacagttgttgcaattcctttggggattgcaatcggtatgtcggcgctagcttccagtattttttcgccctttgtgcaactcctgaagccagtttcacctttggcctggttgccgattggtctcttcttattccgagattcggaattgacgggtgtttttgtcatcctgatttcgagtctgtggccaacgttgatcaacacagcgtttggggtggcgaatgtcaatcctgactttttgaaggtttcgcaatctttgggagctagtcgttggcgcacgattctgaaggtgattctgcccgcagcattgcccagcatcatcgcgggaatgcggatcagcatgggcattgcttggctggtcattgtggcagcagagatgctgttgggaacaggaattggctatttcatttggaatgagtggaataacctatcacttcctaatattttctcggccatcatcatcattgggattgttggcattcttctcgaccaaggcttccgttttcttgagaaccagttttcttacgcaggcaaccgataacccatgatttctgaagctgtgccagccaaggaggagacagggcaggctcaattgctgattgagcaagttggcaaagtttttactgtcaattcaccttctctcctcgatcgccttcgacagcgatcgcccaaacgctacgttgcattagaagatgtcaacctcacgatcgcgtcgaacacatttgtctcgattattggcccttcgggttgtggtaaatcaacccttctcaacttgattgctggccttgatttaccaacgtctggccagattctgctggatggtcaacgcattcgatcgccggggcccgatcgtggcatcgtcttccagaactatgccctgatgccctggatgaccgcgcttgagaatgtcatctttgcagttgaaacggcgcgcccaaacctgagcaaatcccaagctcgcgaagtggcacgagagcatctagagctggtgggtttaaccaaagctgccgatcgctatccgggccaaatttcaggggggatgaaacagcgcgtagcgatcgcccgtgccctctccatccgtcctaagctcctgctgatggatgaaccctttggtgccttggatgccctcacccgtggctacctccaagaagaagtgctgcggatttgggaagccaacaaactgagtgtggtgctcatcactcacagtattgatgaagcactgctgctttccgatcgcattgtggtgatgtctcgtgggccacgagccactattcgagaagtgattgatttaccagccgttcgccctcggcaacggtctgtgatcgaagaagatgagcgcttcgtcaaaatcaaattgcgccttgaagaacatttgttcaacgagacgcgtgcagttgaagaagccagtgtttaggagaattccaatgacctcagcgattactgaacaacttctgaaagcgaaaaaagcaaagggaattacctttactgagcttgagcaattacttggacgggatgaagtctggattgcgagtgtgttctaccgtcaatctacggcttcgcctgaagaggcagaaaagctactgactgctctgggcttagatctggccttggctgatgagttgacgactccgccggtcaaaggttgtttggaaccggtgattccaactgatccgttgatctatcgcttctacgaaatcatgcaggtctatggcttgcccctcaaggatgttatccaagaaaaatttggcgatggcatcatgagtgcgattgatttcaccttagatgtcgataaggttgaagatcccaaaggcgatcgcgttaaggtcacgatgtgtggcaagttcttggcgtacaagaagtggtaaatactgctagctaatcaagcttcaattcttgatcactggaggagagaggtttccgcttctctccttttttgattggaattctctcattaactacgataccgctctgcactgaatgacctcgagctgagtggaaggtagctcgccgccgatgataatggcgcctctggaagagtttggctaagctgtggacggcgatcgcggttgtctgtctgtgctatgcccttgatttcggtgacccgactcaagcttagaaatgttctttatttgccccgcttgcttcccttctcgttgcgatcgacgtggcaggctaaacgagcgcctggcaatctgggcgttaagctgttgcaggatcgtaacttggctttttggacctgcaccgcttggacggatgaaggagccatgcgtcggttcatgagagcggatgcccacgggcaggccatgacgaaattgatggattggtgcagcgaagcctcagtcgtccattggcagcaggatcagccagacttgcccgactggcaggaagctcaccgccgcatgatcgcggaggggcgcccctccaaagtgaaccatccttcggctgcccaccaagcatttcaggtcgatccgccgcgccgcgcctagctcagtgactgcggtcgcgctgtcttgcatcattgcttcgctctaccagcccggatcgctggcacagtccacggtgatctcacccgaggcggcatcgggaatcgcagtgatacagccgcagactggctcgccatc" .

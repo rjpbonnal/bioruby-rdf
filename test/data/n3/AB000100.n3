@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ddbj: <http://sabi.ddbj.nig.ac.jp/> .
+@prefix ddbj_item: <http://sabi.ddbj.nig.ac.jp/core/item/> .
+@prefix ddbj_qualifier: <http://sabi.ddbj.nig.ac.jp/core/qualifier/> .
+@prefix dad: <http://sabi.ddbj.nig.ac.jp/dad/> .
+@prefix ncbi: <http://www.ncbi.nih.gov/> .
+
+<http://sabi.ddbj.nig.ac.jp/ddbj/data/AB000100>
+    ddbj_item:base_count_a "654" ;
+    ddbj_item:base_count_c "759" ;
+    ddbj_item:base_count_g "785" ;
+    ddbj_item:base_count_t "794" ;
+    ddbj_item:definition "Synechococcus elongatus PCC 7942 genes for intrinsic membrane protein, malK-like protein, cyanase, complete cds." ;
+    ddbj_item:division "BCT" ;
+    ddbj_item:feature [
+        ddbj_qualifier:clone_lib "constructed in pBluescript II KS-" ;
+        ddbj_qualifier:db_xref_taxon <http://www.ncbi.nlm.nih.gov/taxonomy/1140> ;
+        ddbj_qualifier:location "1..2992" ;
+        ddbj_qualifier:mol_type "genomic DNA" ;
+        ddbj_qualifier:organism "Synechococcus elongatus PCC 7942" ;
+        ddbj_qualifier:strain "PCC 7942" ;
+        a <http://sabi.ddbj.nig.ac.jp/core/feature/source>
+    ], [
+        ddbj_qualifier:codon_start "1" ;
+        ddbj_qualifier:gene "cynB" ;
+        ddbj_qualifier:location "121..912" ;
+        ddbj_qualifier:product "intrinsic membrane protein" ;
+        ddbj_qualifier:protein_id "BAA21794.1" ;
+        ddbj_qualifier:transl_table "11" ;
+        ddbj_qualifier:translation "MVRTPVPLYLRWAVSILSVLAFLAIWQIAAASGFLGKTFPGSLRTLQDLFGWLSDPFFDNGPNDLGIGWNLLISLRRVAIGYLLATVVAIPLGIAIGMSALASSIFSPFVQLLKPVSPLAWLPIGLFLFRDSELTGVFVILISSLWPTLINTAFGVANVNPDFLKVSQSLGASRWRTILKVILPAALPSIIAGMRISMGIAWLVIVAAEMLLGTGIGYFIWNEWNNLSLPNIFSAIIIIGIVGILLDQGFRFLENQFSYAGNR" ;
+        a <http://sabi.ddbj.nig.ac.jp/core/feature/CDS>
+    ], [
+        ddbj_qualifier:codon_start "1" ;
+        ddbj_qualifier:gene "cynD" ;
+        ddbj_qualifier:location "916..1785" ;
+        ddbj_qualifier:product "malK-like protein" ;
+        ddbj_qualifier:protein_id "BAA21795.1" ;
+        ddbj_qualifier:transl_table "11" ;
+        ddbj_qualifier:translation "MISEAVPAKEETGQAQLLIEQVGKVFTVNSPSLLDRLRQRSPKRYVALEDVNLTIASNTFVSIIGPSGCGKSTLLNLIAGLDLPTSGQILLDGQRIRSPGPDRGIVFQNYALMPWMTALENVIFAVETARPNLSKSQAREVAREHLELVGLTKAADRYPGQISGGMKQRVAIARALSIRPKLLLMDEPFGALDALTRGYLQEEVLRIWEANKLSVVLITHSIDEALLLSDRIVVMSRGPRATIREVIDLPAVRPRQRSVIEEDERFVKIKLRLEEHLFNETRAVEEASV" ;
+        a <http://sabi.ddbj.nig.ac.jp/core/feature/CDS>
+    ], [
+        ddbj_qualifier:codon_start "1" ;
+        ddbj_qualifier:ec_number "4.2.1.104" ;
+        ddbj_qualifier:gene "cynS" ;
+        ddbj_qualifier:location "1796..2236" ;
+        ddbj_qualifier:product "cyanase" ;
+        ddbj_qualifier:protein_id "BAA19515.1" ;
+        ddbj_qualifier:transl_table "11" ;
+        ddbj_qualifier:translation "MTSAITEQLLKAKKAKGITFTELEQLLGRDEVWIASVFYRQSTASPEEAEKLLTALGLDLALADELTTPPVKGCLEPVIPTDPLIYRFYEIMQVYGLPLKDVIQEKFGDGIMSAIDFTLDVDKVEDPKGDRVKVTMCGKFLAYKKW" ;
+        a <http://sabi.ddbj.nig.ac.jp/core/feature/CDS>
+    ] ;
+    ddbj_item:keywords "." ;
+    ddbj_item:lastdate "15-MAY-2009" ;
+    ddbj_item:length "2992" ;
+    ddbj_item:lineage "Bacteria; Cyanobacteria; Chroococcales; Synechococcus." ;
+    ddbj_item:locus "AB000100" ;
+    ddbj_item:moltype "DNA" ;
+    ddbj_item:organism "Synechococcus elongatus PCC 7942" ;
+    ddbj_item:origin "ctgcagccgccgactgaaatctatcgggaagaaaagctcgcttacgacacctttaacccgcaggatccagtcgcttacctcgcatctcaaaagcagaaatacgggagataaacacaacttatggtgagaactcctgtaccgctttacctacgttgggcggtctccatcctcagcgtgcttgcgttcctagccatttggcaaattgcggcagcttcaggatttttaggcaaaacttttcctggctccctgcgcactttgcaggatttgtttggatggctttcagatcccttctttgataacggccccaatgacttagggattggctggaacttactgattagtttgcgtcgcgttgcgatcggctacctgctggcaacagttgttgcaattcctttggggattgcaatcggtatgtcggcgctagcttccagtattttttcgccctttgtgcaactcctgaagccagtttcacctttggcctggttgccgattggtctcttcttattccgagattcggaattgacgggtgtttttgtcatcctgatttcgagtctgtggccaacgttgatcaacacagcgtttggggtggcgaatgtcaatcctgactttttgaaggtttcgcaatctttgggagctagtcgttggcgcacgattctgaaggtgattctgcccgcagcattgcccagcatcatcgcgggaatgcggatcagcatgggcattgcttggctggtcattgtggcagcagagatgctgttgggaacaggaattggctatttcatttggaatgagtggaataacctatcacttcctaatattttctcggccatcatcatcattgggattgttggcattcttctcgaccaaggcttccgttttcttgagaaccagttttcttacgcaggcaaccgataacccatgatttctgaagctgtgccagccaaggaggagacagggcaggctcaattgctgattgagcaagttggcaaagtttttactgtcaattcaccttctctcctcgatcgccttcgacagcgatcgcccaaacgctacgttgcattagaagatgtcaacctcacgatcgcgtcgaacacatttgtctcgattattggcccttcgggttgtggtaaatcaacccttctcaacttgattgctggccttgatttaccaacgtctggccagattctgctggatggtcaacgcattcgatcgccggggcccgatcgtggcatcgtcttccagaactatgccctgatgccctggatgaccgcgcttgagaatgtcatctttgcagttgaaacggcgcgcccaaacctgagcaaatcccaagctcgcgaagtggcacgagagcatctagagctggtgggtttaaccaaagctgccgatcgctatccgggccaaatttcaggggggatgaaacagcgcgtagcgatcgcccgtgccctctccatccgtcctaagctcctgctgatggatgaaccctttggtgccttggatgccctcacccgtggctacctccaagaagaagtgctgcggatttgggaagccaacaaactgagtgtggtgctcatcactcacagtattgatgaagcactgctgctttccgatcgcattgtggtgatgtctcgtgggccacgagccactattcgagaagtgattgatttaccagccgttcgccctcggcaacggtctgtgatcgaagaagatgagcgcttcgtcaaaatcaaattgcgccttgaagaacatttgttcaacgagacgcgtgcagttgaagaagccagtgtttaggagaattccaatgacctcagcgattactgaacaacttctgaaagcgaaaaaagcaaagggaattacctttactgagcttgagcaattacttggacgggatgaagtctggattgcgagtgtgttctaccgtcaatctacggcttcgcctgaagaggcagaaaagctactgactgctctgggcttagatctggccttggctgatgagttgacgactccgccggtcaaaggttgtttggaaccggtgattccaactgatccgttgatctatcgcttctacgaaatcatgcaggtctatggcttgcccctcaaggatgttatccaagaaaaatttggcgatggcatcatgagtgcgattgatttcaccttagatgtcgataaggttgaagatcccaaaggcgatcgcgttaaggtcacgatgtgtggcaagttcttggcgtacaagaagtggtaaatactgctagctaatcaagcttcaattcttgatcactggaggagagaggtttccgcttctctccttttttgattggaattctctcattaactacgataccgctctgcactgaatgacctcgagctgagtggaaggtagctcgccgccgatgataatggcgcctctggaagagtttggctaagctgtggacggcgatcgcggttgtctgtctgtgctatgcccttgatttcggtgacccgactcaagcttagaaatgttctttatttgccccgcttgcttcccttctcgttgcgatcgacgtggcaggctaaacgagcgcctggcaatctgggcgttaagctgttgcaggatcgtaacttggctttttggacctgcaccgcttggacggatgaaggagccatgcgtcggttcatgagagcggatgcccacgggcaggccatgacgaaattgatggattggtgcagcgaagcctcagtcgtccattggcagcaggatcagccagacttgcccgactggcaggaagctcaccgccgcatgatcgcggaggggcgcccctccaaagtgaaccatccttcggctgcccaccaagcatttcaggtcgatccgccgcgccgcgcctagctcagtgactgcggtcgcgctgtcttgcatcattgcttcgctctaccagcccggatcgctggcacagtccacggtgatctcacccgaggcggcatcgggaatcgcagtgatacagccgcagactggctcgccatc" ;
+    ddbj_item:primary_accession "AB000100" ;
+    ddbj_item:reference [
+        ddbj_item:author [
+            rdf:_1 "Omata,T." ;
+            a rdf:Seq
+        ] ;
+        ddbj_item:bases "1 to 2992" ;
+        ddbj_item:journal "Submitted (26-DEC-1996) to the DDBJ/EMBL/GenBank databases. Contact:Tatsuo Omata School of Agricultural Sciences, Nagoya University, Department of Applied Biological Sciences; Chikusa, Nagoya, Aichi 464-01, Japan" ;
+        ddbj_item:title "Direct Submission" ;
+        a <http://sabi.ddbj.nig.ac.jp/core/reference>
+    ], [
+        ddbj_item:author [
+            rdf:_1 "Harano,Y" ;
+            rdf:_2 "Suzuki,I" ;
+            rdf:_3 "Maeda,S" ;
+            rdf:_4 "Kaneko,T" ;
+            rdf:_5 "Tabata,S." ;
+            rdf:_6 "Omata,T." ;
+            a rdf:Seq
+        ] ;
+        ddbj_item:journal "J. Bacteriol. 179, 5744-5750 (1997)" ;
+        ddbj_item:title "Identification and nitrogen regulation of the cyanase gene from the cyanobacteria Synechocystis sp. strain PPC 6803 and Synechococcus sp. strain PPC 7942" ;
+        a <http://sabi.ddbj.nig.ac.jp/core/reference>
+    ] ;
+    ddbj_item:source "Synechococcus elongatus PCC 7942" ;
+    ddbj_item:topology "linear" ;
+    ddbj_item:version "AB000100.1" .
+
